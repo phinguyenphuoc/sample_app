@@ -1,10 +1,25 @@
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
-  <h5 class="my-0 mr-md-auto font-weight-normal" id="logo"><%= t ".title" %></h5>
+  <h5 class="my-0 mr-md-auto font-weight-normal" id="logo"><%= t ".title"%></h5>
   <nav class="my-2 my-md-0 mr-md-3">
+    <div class="dropdown">
     <%= link_to t(".home"), root_path, class: "p-2 text-dark" %>
     <%= link_to t(".about"), about_path, class: "p-2 text-dark" %>
     <%= link_to t(".help"), help_path, class: "p-2 text-dark" %>
     <%= link_to t(".contact"), contact_path, class: "p-2 text-dark" %>
-    <%= link_to t(".login"), "#", class: "p-2 text-dark" %>
+    <% if logged_in? %>
+      <%= link_to t(".users"), "#", class: "p-2 text-dark" %>
+        <button class="btn btn-secondary dropdown-toggle" type="button"
+        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false"><%= t ".account" %>
+       </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <%= link_to t(".profile"), current_user, class: "dropdown-item" %>
+          <%= link_to t(".logout"), logout_path, method: :delete, class: "dropdown-item" %>
+          <%= link_to t(".setting"), "#", class: "dropdown-item" %>
+        </div>
+      </div>
+    <% else %>
+      <%= link_to t(".login"), class: "p-2 text-dark" %>
+  <% end %>
   </nav>
 </div>

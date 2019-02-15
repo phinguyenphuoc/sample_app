@@ -3,12 +3,14 @@ en:
   flash: Welcome to the Sample App!
   notfound: User Notfound
   confirm: Confirmation
+  invalid_session: Invalid email/password combination
   home: Home
   help: Help
   about: About
   login: Login
   signup: Signup
   create: Create my account
+  #signupnow: Sign Up Now
   static_pages:
     home:
       content: Homepage
@@ -24,8 +26,19 @@ en:
   layouts:
     header:
       title: Welcome
+      contact: Contact
+      users: User
+      profile: Profile
+      logout: Log Out
+      setting: Setting
+      account: Account
     footer:
       language: Language
+  sessions:
+    new:
+      login: Log In
+      signupnow: Sign Up Now
+      new_user: New User?
   shared:
     error_messages:
       form: The form contains
@@ -36,4 +49,3 @@ en:
         email: "Email"
         password: "Password"
         password_confirmation: "Password Confirmation"
-
