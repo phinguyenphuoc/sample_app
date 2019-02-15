@@ -7,7 +7,7 @@
     <%= link_to t(".help"), help_path, class: "p-2 text-dark" %>
     <%= link_to t(".contact"), contact_path, class: "p-2 text-dark" %>
     <% if logged_in? %>
-      <%= link_to t(".users"), "#", class: "p-2 text-dark" %>
+      <%= link_to t(".users"), users_path, class: "p-2 text-dark" %>
         <button class="btn btn-secondary dropdown-toggle" type="button"
         id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
         aria-expanded="false"><%= t ".account" %>
@@ -15,7 +15,7 @@
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
           <%= link_to t(".profile"), current_user, class: "dropdown-item" %>
           <%= link_to t(".logout"), logout_path, method: :delete, class: "dropdown-item" %>
-          <%= link_to t(".setting"), "#", class: "dropdown-item" %>
+          <%= link_to t(".setting"), edit_user_path(current_user), class: "dropdown-item" %>
         </div>
       </div>
     <% else %>

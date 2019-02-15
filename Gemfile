@@ -3,6 +3,10 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "2.6.0"
 
+# faker, page
+gem "bootstrap-will_paginate", "1.0.0"
+gem "faker", "1.7.3"
+gem "will_paginate", "3.1.6"
 # gem config
 gem "config"
 # robocop
