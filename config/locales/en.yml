@@ -3,11 +3,16 @@ en:
   home: Home
   help: Help
   about: About
-  home: Home
-  help: Help
+  login: Login
+  signup: Signup
   static_pages:
     home:
       content: Homepage
+      welcome: Welcome to the Sample App
+      notice1: This is the home page for the
+      notice2: sample application.
+      ruby: Ruby on Rails Tutorial
+      signupnow: Sign Up Now
     help:
       content: Help page
     about:
