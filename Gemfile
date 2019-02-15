@@ -3,6 +3,8 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "2.6.0"
 
+# gem config
+gem "config"
 # robocop
 gem "rubocop", "~> 0.54.0", require: false
 # lastest boostrap
@@ -34,7 +36,7 @@ gem "jbuilder", "~> 2.5"
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 # Use ActiveModel has_secure_password
-# gem "bcrypt", "~> 3.1.7"
+gem "bcrypt", "~> 3.1.7"
 
 # Use ActiveStorage variant
 # gem "mini_magick", "~> 4.8"
