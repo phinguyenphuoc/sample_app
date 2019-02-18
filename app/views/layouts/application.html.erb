@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= yield :title %></title>
+    <title><%= full_title yield :title %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
   </head>
-
   <body>
-    <%= yield %>
+    <div class="container">
+      <%= render "layouts/header" %>
+      <div class="row">
+        <div class="col-md-8 offset-md-2"><%= yield %></div>
+      </div>
+      <%= render "layouts/footer" %>
+    </div>
   </body>
 </html>
