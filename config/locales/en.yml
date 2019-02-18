@@ -3,6 +3,8 @@ en:
   home: Home
   help: Help
   about: About
+  home: Home
+  help: Help
   static_pages:
     home:
       content: Homepage
@@ -15,3 +17,4 @@ en:
       title: Welcome
     footer:
       language: Language
+
