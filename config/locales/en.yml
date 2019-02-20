@@ -1,10 +1,14 @@
 en:
   base_title: Ruby on Rails Tutorial Sample App
+  flash: Welcome to the Sample App!
+  notfound: User Notfound
+  confirm: Confirmation
   home: Home
   help: Help
   about: About
   login: Login
   signup: Signup
+  create: Create my account
   static_pages:
     home:
       content: Homepage
@@ -22,3 +26,14 @@ en:
       title: Welcome
     footer:
       language: Language
+  shared:
+    error_messages:
+      form: The form contains
+  activerecord:
+    attributes:
+      user:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Password Confirmation"
+
