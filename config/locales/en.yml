@@ -32,6 +32,7 @@ en:
       logout: Log Out
       setting: Setting
       account: Account
+      login: Login
     footer:
       language: Language
   sessions:
@@ -39,6 +40,7 @@ en:
       login: Log In
       signupnow: Sign Up Now
       new_user: New User?
+      remember: Remember me on this computer
   shared:
     error_messages:
       form: The form contains
