@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
-  before_action :load_user, except: [:new, :create, :index]
-  before_action :logged_in_user, except: [:new, :show, :create]
-  before_action :correct_user, only: [:edit, :update]
+  before_action :load_user, except: %i(new create index)
+  before_action :logged_in_user, except: %i(new show create)
+  before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
 
   def new
