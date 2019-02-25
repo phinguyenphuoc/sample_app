@@ -3,13 +3,22 @@ en:
   flash: Welcome to the Sample App!
   notfound: User Notfound
   confirm: Confirmation
+  profile_update: Profile updated
+  pls_login: Please login
+  del_user: Deleted User
   invalid_session: Invalid email/password combination
+  del_user_fail: Delete Fail
   home: Home
   help: Help
   about: About
   login: Login
   signup: Signup
   create: Create my account
+  save: Save change
+  edit_user: Edit User
+  all_user: All User
+  del: Delete
+  sure: You sure?
   #signupnow: Sign Up Now
   static_pages:
     home:
@@ -44,6 +53,10 @@ en:
   shared:
     error_messages:
       form: The form contains
+  users:
+    edit:
+      update: Update your profile
+      change: Change
   activerecord:
     attributes:
       user:
