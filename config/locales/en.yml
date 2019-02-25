@@ -19,6 +19,13 @@ en:
   pass_expired: Password reset has expired.
   password_reset: Password reset
   empty: can't be empty
+  creat_micropost: Micropost created!
+  viewprofile: view my profile
+  del_micropost: Micropost deleted
+  del_micropost_failed: Can't Delete Micropost
+  micropost: Micropost
+  post: Post
+  ago: Ago
   home: Home
   help: Help
   about: About
@@ -38,6 +45,7 @@ en:
       notice2: sample application.
       ruby: Ruby on Rails Tutorial
       signupnow: Sign Up Now
+      micropost_feed: Micropost Feed
     help:
       content: Help page
     about:
