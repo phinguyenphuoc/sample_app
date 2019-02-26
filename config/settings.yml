@@ -10,3 +10,4 @@ views:
 sessions:
   one: "1"
 per_page: 10
+time_pass_expired: 2
