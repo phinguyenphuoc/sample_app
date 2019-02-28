@@ -3,6 +3,9 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "2.6.0"
 
+# upload image
+gem "carrierwave", "1.2.2"
+gem "mini_magick", "4.7.0"
 # faker, page
 gem "bootstrap-will_paginate", "1.0.0"
 gem "faker", "1.7.3"
@@ -71,6 +74,11 @@ group :test do
   gem "selenium-webdriver"
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem "chromedriver-helper"
+end
+
+group :production do
+  gem "fog", "1.42"
+  gem "pg", "0.20.0"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
