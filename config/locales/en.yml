@@ -24,6 +24,10 @@ en:
   del_micropost: Micropost deleted
   del_micropost_failed: Can't Delete Micropost
   micropost: Micropost
+  following: following
+  followers: followers
+  follow: Follow
+  unfollow: Unfollow
   post: Post
   ago: Ago
   home: Home
